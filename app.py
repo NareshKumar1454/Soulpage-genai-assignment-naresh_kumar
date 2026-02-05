@@ -3,7 +3,10 @@ Streamlit UI for Conversational Knowledge Bot
 100% FREE - DeepSeek via OpenRouter
 """
 import streamlit as st
+from dotenv import load_dotenv
 from bot_core import DeepSeekBot
+
+load_dotenv()
 
 # Page config
 st.set_page_config(

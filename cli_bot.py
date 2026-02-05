@@ -2,7 +2,10 @@
 Command Line Interface for the Conversational Knowledge Bot
 100% FREE - DeepSeek via OpenRouter
 """
+from dotenv import load_dotenv
 from bot_core import DeepSeekBot
+
+load_dotenv()
 
 
 def main():
