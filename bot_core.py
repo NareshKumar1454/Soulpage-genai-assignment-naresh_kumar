@@ -111,8 +111,7 @@ class DeepSeekBot:
             return f"Wikipedia error: {str(e)}"
 
 
-# Create global bot instance
-bot = DeepSeekBot()
+
 
 # Compatibility: keep old class names for existing code
 class ConversationalKnowledgeBot(DeepSeekBot):
