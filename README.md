@@ -17,7 +17,6 @@ A **100% FREE** conversational AI bot powered by **DeepSeek AI** via **OpenRoute
 
 ### 1. Prerequisites
 - Python 3.8+
-- OpenRouter API key (free)
 
 ### 2. Installation
 
@@ -27,7 +26,3 @@ cd conversational-knowledge-bot
 
 # Install dependencies
 pip install -r requirements.txt
-
-# Set up environment (uses default free key)
-# Or create .env file with your key:
-echo "OPENROUTER_API_KEY=your_key_here" > .env

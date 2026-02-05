@@ -2,21 +2,18 @@
 Conversational Knowledge Bot - Core Module
 Uses DeepSeek via OpenRouter (100% FREE)
 """
-import os
-from dotenv import load_dotenv
 import requests
 from typing import List, Dict
 
-load_dotenv()
+# API Key - hardcoded directly
+OPENROUTER_API_KEY = "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"
 
 
 class DeepSeekBot:
     """Simple bot using DeepSeek via OpenRouter"""
     
     def __init__(self, model="deepseek/deepseek-chat", temperature=0.7):
-        self.api_key = os.getenv("OPENROUTER_API_KEY")
-        if not self.api_key:
-            raise ValueError("OPENROUTER_API_KEY not set in .env file")
+        self.api_key = OPENROUTER_API_KEY
         self.model = model
         self.temperature = temperature
         self.base_url = "https://openrouter.ai/api/v1"
@@ -109,15 +106,3 @@ class DeepSeekBot:
             return "Wikipedia module not available."
         except Exception as e:
             return f"Wikipedia error: {str(e)}"
-
-
-
-
-# Compatibility: keep old class names for existing code
-class ConversationalKnowledgeBot(DeepSeekBot):
-    """Compatibility wrapper"""
-    pass
-
-def create_simple_bot():
-    """Compatibility function"""
-    return DeepSeekBot()
