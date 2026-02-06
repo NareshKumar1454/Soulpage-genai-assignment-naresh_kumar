@@ -17,7 +17,7 @@ except ImportError as e:
 
 # Page configuration
 st.set_page_config(
-    page_title="DeepSeek Knowledge Bot",
+    page_title="Knowledge Bot",
     page_icon="🤖",
     layout="wide"
 )
@@ -43,7 +43,7 @@ if 'initialized' not in st.session_state:
 
 # Sidebar
 with st.sidebar:
-    st.title("⚙️ DeepSeek Bot")
+    st.title("⚙️ Knowledge Bot")
     
     st.subheader("API Key")
     api_key = st.text_input(
@@ -100,7 +100,7 @@ with st.sidebar:
     """)
 
 # Main content
-st.title("🤖 DeepSeek Knowledge Bot")
+st.title("🤖 Knowledge Bot")
 st.markdown("**100% Free AI Chatbot**")
 
 if not IMPORT_SUCCESS:
