@@ -1,6 +1,5 @@
 """
 Streamlit UI for Conversational Knowledge Bot
-100% FREE - DeepSeek via OpenRouter
 """
 import streamlit as st
 from dotenv import load_dotenv
@@ -19,7 +18,7 @@ st.set_page_config(
 # Initialize bot
 @st.cache_resource
 def get_bot():
-    return DeepSeekBot()
+    return KnowledgeBot()
 
 bot = get_bot()
 
