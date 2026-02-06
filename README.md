@@ -1,10 +1,9 @@
-# DeepSeek Conversational Knowledge Bot 🤖
+# Conversational Knowledge Bot 🤖
 
-A **100% FREE** conversational AI bot powered by **DeepSeek AI** via **OpenRouter API**. The bot remembers conversations and searches external sources for factual information.
+A conversational AI. The bot remembers conversations and searches external sources for factual information.
 
 ## ✨ Features
 
-- **🎯 100% Free**: Uses DeepSeek AI via OpenRouter free tier
 - **💬 Conversational Memory**: Remembers entire conversation history
 - **🔍 Web Search**: DuckDuckGo integration for current information
 - **📚 Wikipedia**: Factual knowledge from Wikipedia
