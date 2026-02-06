@@ -1,6 +1,5 @@
 """
 Command Line Interface for the Conversational Knowledge Bot
-100% FREE - DeepSeek via OpenRouter
 """
 from dotenv import load_dotenv
 from bot_core import DeepSeekBot
@@ -11,7 +10,7 @@ load_dotenv()
 def main():
     """Main CLI function"""
     print("=" * 70)
-    print("🤖 DEEPSEEK KNOWLEDGE BOT - COMMAND LINE VERSION")
+    print("🤖  KNOWLEDGE BOT - COMMAND LINE VERSION")
     print("=" * 70)
     print("\n📝 Commands:")
     print("  • Type your question and press Enter")
