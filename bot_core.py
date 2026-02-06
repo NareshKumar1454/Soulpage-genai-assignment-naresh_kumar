@@ -1,6 +1,5 @@
 """
 Conversational Knowledge Bot - Core Module
-Uses DeepSeek via OpenRouter (100% FREE)
 """
 import os
 from dotenv import load_dotenv
@@ -10,10 +9,10 @@ from typing import List, Dict
 load_dotenv()
 
 
-class DeepSeekBot:
-    """Simple bot using DeepSeek via OpenRouter"""
+class KownledgeBot:
+    """Simple Conversational Knowledge bot"""
     
-    def __init__(self, model="deepseek/deepseek-chat", temperature=0.7):
+    def __init__(self, model="memor/memory-chat", temperature=0.7):
         self.api_key = os.getenv("OPENROUTER_API_KEY")
         if not self.api_key:
             raise ValueError("OPENROUTER_API_KEY not set in .env file")
@@ -23,7 +22,6 @@ class DeepSeekBot:
         self.conversation_history: List[Dict] = []
     
     def chat(self, user_message: str) -> str:
-        """Send message to DeepSeek and get response"""
         
         # Add user message to history
         self.conversation_history.append({"role": "user", "content": user_message})
